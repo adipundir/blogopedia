@@ -625,26 +625,30 @@
     <header>
         <div class="logo">Blogo<span>Pedia</span></div>
         <div class="buttons">
-            <div class="search-bar">
-                <input type="text" placeholder="Search" name="text" class="input">
-                <button class="ui-btn">
+            <form action="./search.php" class="search-bar">
+                <input type="text" placeholder="Search Profile" name="text" class="input">
+                <button type="submit" class="ui-btn">
                     <span>
                         Search
                     </span>
                 </button>
-            </div>
-            <button class="ui-btn">
-                <span>
-                    Login
-                </span>
-            </button>
-            <button class="ui-btn">
-                <span>
-                    Signup
-                </span>
-            </button>
-            <form action="./logout.php" method="post">
+            </form>
+            <a class="nav-link-btn" href="./login.html">
                 <button class="ui-btn">
+                    <span>
+                        Login
+                    </span>
+                </button>
+            </a>
+            <a class="nav-link-btn" href="./signup.html">
+                <button class="ui-btn">
+                    <span>
+                        Signup
+                    </span>
+                </button>
+            </a>
+            <form action="./logout.php" method="post">
+                <button type="submit" class="ui-btn">
                     <span>
                         Logout
                     </span>
