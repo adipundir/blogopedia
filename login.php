@@ -10,11 +10,11 @@ $result = mysqli_query($conn, $sql);
 
 while($row = mysqli_fetch_assoc($result)) 
 {
-    if($row["email"]==$un && $row["password"]== $pd)
+    if($row["email"]==$en && $row["password"]== $pd)
      {
-        $_SESSION['semail']=$un;
+        $_SESSION['semail']=$en;
         $_SESSION['spassword']=$pd;
-      header("location:index.html");
+      header("location:./index.html");
      }
 } 
 echo "Invalid User";
