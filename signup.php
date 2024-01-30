@@ -11,7 +11,9 @@ $sql="insert into eusers values('$em','$pd')";
 $result = mysqli_query($conn, $sql);
 if($result)
 {
-    echo "Records Inserted";
+    mysqli_close($conn);
+    header("Location:index.html");
+    exit;
 }else{
     echo "No Records Inserted";
 }
