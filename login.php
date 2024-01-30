@@ -10,9 +10,9 @@ $result = mysqli_query($conn, $sql);
 
 while($row = mysqli_fetch_assoc($result)) 
 {
-    if($row["email"]==$en && $row["password"]== $pd)
+    if($row["email"]==$em && $row["password"]== $pd)
      {
-        $_SESSION['semail']=$en;
+        $_SESSION['semail']=$em;
         $_SESSION['spassword']=$pd;
       header("location:./index.html");
      }
