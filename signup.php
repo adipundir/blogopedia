@@ -1,9 +1,6 @@
 <?php 
-
-
 $em=$_POST['t1'];
 $pd=$_POST['t2'];
-
 
 $servername="localhost";
 $username= "root";
