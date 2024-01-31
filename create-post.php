@@ -6,7 +6,7 @@ include("dbconnect.php");
 <?php 
 $user=  $_SESSION['semail'];
 $post=$_POST['post-input'];
-$sql="insert into posts values('$post','$user')";
+$sql="insert into posts values('$post','$user','0','0')";
 $result = mysqli_query($conn, $sql);
 if($result)
 {
