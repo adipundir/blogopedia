@@ -18,7 +18,7 @@ $username="root";
 $password="";
 $dbname="blogopedia";
 $conn=mysqli_connect($servername,$username,$password,$dbname);
-$em=$_POST['t1'];
+$em=$_POST['search-input'];
 $sql="select * from eusers where email like '$em%'";
 $result=mysqli_query($conn,$sql);
 

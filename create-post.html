@@ -452,16 +452,16 @@
     </header>
 
     <section class="content-container">
-        <div class="form-control">
-            <textarea class="input-text input-alt" placeholder="Type something intelligent" required></textarea>
+        <form class="form-control" action="./create-post.php" method="post">
+            <textarea class="input-text input-alt" placeholder="Type something intelligent" required name="post-input"></textarea>
             <span class="input-border input-border-alt"></span>
-        </div>
-        <div class="post-btn">
-            <button class="btn">
-                <span class="btn-text-one">Next</span>
-                <span class="btn-text-two">Post</span>
-            </button>
-        </div>
+            <div class="post-btn">
+                <button class="btn" type="submit">
+                    <span class="btn-text-one">Next</span>
+                    <span class="btn-text-two">Post</span>
+                </button>
+            </div>
+        </form>
     </section>
 
 
