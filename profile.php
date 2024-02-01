@@ -789,14 +789,12 @@ $user = $_SESSION['semail']
 
     <section class="content-container">
             <div class="form-control">
+                <h1> User Email : <h2><?php echo $user; ?></h2> 
                 <span>
-                    <h1> User Email : <h2>
-                        <!-- <?php echo $user; ?> -->
-                    </h2> 
 
-                    <form action="./update-password.php">
+                    <form action="./update-password.php" method="post">
                         <h2>Update Password</h2>
-                        <input placeholder="Old Password" type="text" name="t2">
+                        <input autofill="off" placeholder="Old Password" type="text" name="t2">
                         <input placeholder="New Password" type="password" name="t3">
                         <button>Update</button>
                     </form>
